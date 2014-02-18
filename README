@@ -1,0 +1,21 @@
+This is a sample app to mock an IVR call with a fictitious company called Trade Shipping Company.
+
+INSTRUCTIONS
+************
+The app needs to have some stuff configured before you can start it. First of all you need a demo twilio account. You can 
+signup for free on wwww.twilio.com and get one. On your dashboard, you will find your application_sid and auth_token. Replace the 
+sid and token with these values in app.js. 
+
+You will also get a verified number that can make calls to you and a number that you can call to. You configure it on the dashboard when you signup.
+Replace VERIFIED_NUMBER_CALL_FROM and VERIFIED_NUMBER_CALL_TO with these values. In addition you need to set the appurl. This is where your server
+will be running. You can't use localhost directly. You must tunnel and expose it to the internet. Or you can use an external server for it. 
+So a sample appurl will be : http://www.yourserver.com:3000/ivr/step1
+
+Start the app with command : $>node app.js
+Navigate to http://www.yourserver.com:3000/, and you will find a nice welcome screen that instructs you to enter the number you want to call to. 
+
+If you have a premium account you can call any number. With a demo account you can just use the one you configured.
+
+Hit the call button and an IVR call will be made to the number you specified. 
+
+Have fun !!

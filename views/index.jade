@@ -1,0 +1,12 @@
+extends layout
+
+block content
+ div#mainlogin 
+  h1= title
+  h2 Order Now! Give us a call!
+  
+  form#formMakeCall(name="calluser",method="post",action="/call")
+    input#makeCall(type="text",placeholder="calluser",name="calluser")
+    button#btnSubmit(type="submit") Call Us 
+  
+   
